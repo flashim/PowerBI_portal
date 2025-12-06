@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Custom Properties for Harmony theming */
+:root {
+  --primary-color: #0078d4;
+}
+
+/* Power BI Embed container styling */
+.powerbi-embed-container {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+    color-scheme: dark;
+  }
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Remove default focus styles for better custom styling */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-blue-500;
+}
